@@ -1,3 +1,2 @@
-web: java -Xms150M -jar target/myapp.jar
--11:+UseContainerSupport
+web: java $JAVA_OPTS -jar target/*.jar -Dserver.port=$PORT $JAR_OPTS
 
